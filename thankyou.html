@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Application Submitted</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.thankyou{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.thankyou-box{
+max-width:600px;
+background:#fff;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.thankyou h1{
+color:#0b5d3b;
+margin-bottom:20px;
+}
+
+.application-id{
+font-size:22px;
+font-weight:bold;
+margin:20px 0;
+color:#d35400;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="thankyou">
+
+<div class="thankyou-box">
+
+<h1>Application Submitted Successfully</h1>
+
+<p>
+Thank you for applying to
+<b>AL MADEENA INTEGRATED CAMPUS.</b>
+</p>
+
+<div class="application-id" id="applicationID">
+Application ID
+</div>
+
+<a href="index.html" class="btn">
+Back to Home
+</a>
+
+</div>
+
+</section>
+
+<script>
+
+const id = localStorage.getItem("applicationID");
+
+if(id){
+
+document.getElementById("applicationID").innerHTML =
+"Application ID : <br><strong>"+id+"</strong>";
+
+}
+
+</script>
+
+</body>
+</html>
