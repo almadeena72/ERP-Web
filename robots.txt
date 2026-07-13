@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://almadeena72.github.io/ERP-Web/sitemap.xml
